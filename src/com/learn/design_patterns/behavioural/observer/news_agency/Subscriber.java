@@ -1,7 +1,7 @@
 package com.learn.design_patterns.behavioural.observer.news_agency;
 
 public interface Subscriber {
-    public void update(String news);
+    void update(String news);
 }
 
 class EmailSubscriber implements Subscriber {

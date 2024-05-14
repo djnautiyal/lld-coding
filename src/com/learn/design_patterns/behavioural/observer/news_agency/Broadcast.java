@@ -1,7 +1,5 @@
 package com.learn.design_patterns.behavioural.observer.news_agency;
 
-import java.util.List;
-
 public class Broadcast {
     public static void main(String[] args) {
         EmailSubscriber e1 = new EmailSubscriber("email1");
