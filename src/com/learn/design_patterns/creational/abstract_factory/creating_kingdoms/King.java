@@ -1,10 +1,7 @@
 package com.learn.design_patterns.creational.abstract_factory.creating_kingdoms;
 
-class ElfCastle implements Castle {
-    @Override
-    public String getDescription() {
-        return "This is an Elven castle";
-    }
+interface King{
+    String getDescription();
 }
 
 class ElfKing implements King {
@@ -14,9 +11,10 @@ class ElfKing implements King {
     }
 }
 
-class ElfArmy implements Army {
+class OrcishKing implements King {
     @Override
     public String getDescription() {
-        return "This is an Elven army";
+        return "This is an Orcish king";
     }
 }
+

@@ -1,16 +1,13 @@
 package com.learn.design_patterns.creational.abstract_factory.creating_kingdoms;
 
-class OrcishCastle implements Castle {
-    @Override
-    public String getDescription() {
-        return "This is an Orcish castle";
-    }
+interface Army{
+    String getDescription();
 }
 
-class OrcishKing implements King {
+class ElfArmy implements Army {
     @Override
     public String getDescription() {
-        return "This is an Orcish king";
+        return "This is an Elven army";
     }
 }
 
