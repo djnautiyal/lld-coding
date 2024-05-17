@@ -7,7 +7,7 @@ public class SocketAdapter {
         socket = new Socket();
     }
     public Volt get120Volt(){
-        System.out.println("Adapter returning original voltage " + socket.getVolt().getVolts() + "V.");
+        System.out.println("Adapter returning original 120V.");
         return socket.getVolt();
     }
     public Volt get12Volt(){
@@ -26,8 +26,8 @@ public class SocketAdapter {
 
     public static void main(String[] args) {
         SocketAdapter socketAdapter = new SocketAdapter();
-        socketAdapter.get120Volt();
-        socketAdapter.get12Volt();
-        socketAdapter.get3Volt();
+        System.out.println("Voltage produced: " + socketAdapter.get120Volt().getVolts() + "V.");
+        System.out.println("Voltage produced: " + socketAdapter.get12Volt().getVolts() + "V.");
+        System.out.println("Voltage produced: " + socketAdapter.get3Volt().getVolts() + "V.");
     }
 }

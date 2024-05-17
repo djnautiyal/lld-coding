@@ -10,8 +10,4 @@ public class Volt {
     public int getVolts() {
         return volts;
     }
-
-    public void setVolts(int volts) {
-        this.volts = volts;
-    }
 }
