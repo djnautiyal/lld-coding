@@ -10,7 +10,7 @@ enum PaymentType implements PaymentStrategy {
     CASH((x) -> System.out.println("Paying ₹" + x + " with Cash"));
 
     private final PaymentStrategy paymentStrategy;
-    private PaymentType(PaymentStrategy paymentStrategy) {
+    PaymentType(PaymentStrategy paymentStrategy) {
         this.paymentStrategy = paymentStrategy;
     }
 
