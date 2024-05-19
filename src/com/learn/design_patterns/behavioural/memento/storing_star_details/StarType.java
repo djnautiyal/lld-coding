@@ -12,4 +12,9 @@ public enum StarType {
     StarType(String sun) {
         this.sun = sun;
     }
+
+    @Override
+    public String toString() {
+        return sun;
+    }
 }
