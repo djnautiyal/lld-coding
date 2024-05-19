@@ -12,8 +12,4 @@ public enum StarType {
     StarType(String sun) {
         this.sun = sun;
     }
-
-    public String getSun() {
-        return sun;
-    }
 }

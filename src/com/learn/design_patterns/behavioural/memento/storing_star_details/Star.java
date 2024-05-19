@@ -39,8 +39,7 @@ public class Star {
     }
 
     StarMemento getMemento(){
-        var memento = new StarMementoImpl(ageInBillions, starType, massInSuns);
-        return memento;
+        return new StarMementoImpl(ageInBillions, starType, massInSuns);
     }
 
     void setMemento(StarMemento memento){
@@ -56,9 +55,9 @@ public class Star {
     }
 
     private static class StarMementoImpl implements StarMemento{
-        private int ageInBillions;
-        private StarType starType;
-        private int massInSuns;
+        private final int ageInBillions;
+        private final StarType starType;
+        private final int massInSuns;
 
         public StarMementoImpl(int age, StarType starType, int massTons) {
             this.ageInBillions = age;
